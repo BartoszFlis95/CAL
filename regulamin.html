@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamin - NL•DE Relocation</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #2563eb;
+            --color-text: #1e293b;
+            --color-text-light: #64748b;
+            --color-bg: #ffffff;
+            --color-bg-light: #f8fafc;
+            --color-border: #e2e8f0;
+            --spacing: 1rem;
+            --max-width: 900px;
+            --border-radius: 0.5rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: var(--color-text);
+            background-color: var(--color-bg-light);
+        }
+        
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem var(--spacing);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            gap: 0.75rem;
+        }
+        
+        .document {
+            background: var(--color-bg);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .lang-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0 2rem;
+            flex-wrap: wrap;
+        }
+
+        .lang-btn {
+            background: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            color: var(--color-text);
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover,
+        .lang-btn.active {
+            background: var(--color-primary);
+            color: #ffffff;
+            border-color: var(--color-primary);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+        
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+        }
+
+        .terms-content.hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .document {
+                padding: 2rem 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Powrót do strony głównej</a>
+        
+        <div class="document">
+            <h1>📄 REGULAMIN ŚWIADCZENIA USŁUG</h1>
+            <div class="lang-selector" aria-label="Wybór języka">
+                <button class="lang-btn active" data-lang="pl">PL</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="nl">NL</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
+
+            <div id="terms-pl" class="terms-content">
+                <h2>Regulamin świadczenia usług – deneeu.pl</h2>
+
+                <h2>1. Postanowienia ogólne</h2>
+                <p>1.1. Usługodawcą jest Bartosz Szymon Flis, prowadzący działalność gospodarczą pod firmą Deneeu, z siedzibą w Niemczech: Hulser str 460, 47803 KREFELD (dalej „Usługodawca”).</p>
+                <p>1.2. Regulamin określa zasady świadczenia usług w ramach strony internetowej deneeu.pl („Serwis”).</p>
+                <p>1.3. Kontakt z Usługodawcą: e-mail: Kontakt@deneeu.pl, telefon: +49 17670167819, WhatsApp (numer jw.).</p>
+                <p>1.4. Regulamin dostępny jest w językach: polskim, angielskim, niemieckim i holenderskim. W razie wątpliwości interpretacyjnych wiążąca jest wersja polska.</p>
+
+                <h2>2. Charakter usług</h2>
+                <p>2.1. Usługi mają charakter informacyjno-doradczy i administracyjny – polegają na wsparciu w uporządkowaniu procesu najmu i komunikacji.</p>
+                <p>2.2. Usługodawca nie jest agencją nieruchomości i nie świadczy usług pośrednictwa (w tym w rozumieniu prawa niemieckiego i niderlandzkiego).</p>
+                <p>2.3. Usługodawca nie podpisuje umów najmu w imieniu stron ani nie podejmuje decyzji o wynajmie.</p>
+
+                <h2>3. Zakres usług</h2>
+                <p>3.1. Zakres usług może obejmować w szczególności:</p>
+                <ul>
+                    <li>wstępną analizę sytuacji i wymagań klienta,</li>
+                    <li>przekazanie informacji i checklist dokumentów,</li>
+                    <li>pomoc organizacyjną i wsparcie komunikacyjne,</li>
+                    <li>przygotowanie/porządkowanie zgłoszeń i informacji,</li>
+                    <li>wstępną selekcję kandydatów i polecenie zgłoszeń (dla wynajmujących),</li>
+                    <li>wsparcie informacyjne po stronie użytkownika (bez ingerencji w umowę).</li>
+                </ul>
+                <p>3.2. Szczegółowy zakres usług ustalany jest indywidualnie z klientem przed rozpoczęciem współpracy.</p>
+
+                <h2>4. Zasady współpracy z osobami szukającymi najmu</h2>
+                <p>4.1. Usługodawca może przekazywać informacje o procesie najmu, wymaganych dokumentach oraz pomagać w przygotowaniu zgłoszeń.</p>
+                <p>4.2. Usługodawca nie gwarantuje znalezienia mieszkania ani zawarcia umowy najmu.</p>
+
+                <h2>5. Zasady współpracy z wynajmującymi (właścicielami)</h2>
+                <p>5.1. Usługa dla wynajmujących polega na selekcji zgłoszeń i poleceniu kandydatów zgodnie z kryteriami przekazanymi przez wynajmującego.</p>
+                <p>5.2. Decyzja o wyborze najemcy oraz warunki umowy najmu należą wyłącznie do wynajmującego i najemcy.</p>
+                <p>5.3. Usługodawca nie negocjuje czynszu ani warunków umowy i nie pośredniczy w jej zawarciu.</p>
+
+                <h2>6. Wynagrodzenie i płatności</h2>
+                <p>6.1. Cennik usług może być wskazany w Serwisie lub ustalany indywidualnie.</p>
+                <p>6.2. Wynagrodzenie dotyczy wyłącznie wykonania usługi (np. selekcji, opracowania informacji, wsparcia organizacyjnego) i nie jest prowizją od czynszu ani kaucji.</p>
+                <p>6.3. Wynagrodzenie jest stałe i nie zależy od tego, czy dojdzie do podpisania umowy najmu.</p>
+                <p>6.4. Płatność następuje z góry, przelewem na rachunek bankowy Usługodawcy, przed rozpoczęciem realizacji usługi.</p>
+
+                <h2>6a. Rezygnacja klienta i zwrot środków</h2>
+                <p>6a.1. Klient może zrezygnować z usługi w każdym czasie, składając oświadczenie na adres e-mail Usługodawcy.</p>
+                <p>6a.2. W przypadku rezygnacji PRZED rozpoczęciem realizacji usługi, Usługodawca zwraca 100% wpłaconej kwoty.</p>
+                <p>6a.3. W przypadku rezygnacji PO rozpoczęciu realizacji usługi, Usługodawca zwraca 50% wpłaconej kwoty.</p>
+                <p>6a.4. Za „rozpoczęcie realizacji usługi” uznaje się moment wysłania przez Usługodawcę pierwszej informacji, analizy lub checklisty do klienta.</p>
+
+                <h2>7. Prawo odstąpienia od umowy (konsument)</h2>
+                <p>7.1. Konsument ma prawo odstąpić od umowy bez podania przyczyny w terminie 14 dni od dnia jej zawarcia.</p>
+                <p>7.2. Aby odstąpić od umowy, konsument powinien wysłać jednoznaczne oświadczenie na adres e-mail Usługodawcy.</p>
+                <p>7.3. W przypadku odstąpienia od umowy, Usługodawca zwraca wszystkie otrzymane od konsumenta płatności niezwłocznie, nie później niż w terminie 14 dni od otrzymania oświadczenia.</p>
+
+                <h2>8. Wyłączenia odpowiedzialności</h2>
+                <p>8.1. Usługodawca nie odpowiada za decyzje osób trzecich (właścicieli, agencji, zarządców) ani za treść ogłoszeń.</p>
+                <p>8.2. Usługodawca nie odpowiada za stan nieruchomości, warunki umowy, wysokość opłat ani inne ustalenia między stronami.</p>
+                <p>8.3. Usługodawca nie ponosi odpowiedzialności za skuteczność wynajmu.</p>
+
+                <h2>9. Reklamacje</h2>
+                <p>9.1. Reklamacje można składać e-mailowo na adres: Kontakt@deneeu.pl.</p>
+                <p>9.2. Reklamacja powinna zawierać imię, nazwisko, opis problemu oraz oczekiwany sposób rozwiązania.</p>
+                <p>9.3. Odpowiedź na reklamację zostanie udzielona w terminie do 14 dni od dnia jej otrzymania.</p>
+
+                <h2>10. Postanowienia końcowe</h2>
+                <p>10.1. Regulamin obowiązuje od dnia publikacji w Serwisie.</p>
+                <p>10.2. Usługodawca może aktualizować regulamin – aktualna wersja jest zawsze publikowana w Serwisie.</p>
+                <p>10.3. W sprawach nieuregulowanych regulaminem zastosowanie mają przepisy prawa niemieckiego.</p>
+                <p>10.4. Sądem właściwym dla rozstrzygania sporów jest sąd właściwy dla siedziby Usługodawcy.</p>
+            </div>
+
+            <div id="terms-en" class="terms-content hidden">
+                <h2>Terms of Service – deneeu.pl</h2>
+
+                <h2>1. General provisions</h2>
+                <p>1.1. The service provider is Bartosz Szymon Flis, conducting business under the name Deneeu, with its registered office in Germany: Hulser str 460, 47803 KREFELD (hereinafter the “Service Provider”).</p>
+                <p>1.2. These Terms set out the rules for the provision of services within the deneeu.pl website (the “Service”).</p>
+                <p>1.3. Contact with the Service Provider: e-mail: Kontakt@deneeu.pl, phone: +49 17670167819, WhatsApp (same number as above).</p>
+                <p>1.4. These Terms are available in Polish, English, German and Dutch. In case of interpretative doubts, the Polish version shall prevail.</p>
+
+                <h2>2. Nature of services</h2>
+                <p>2.1. The services are informational/advisory and administrative in nature – they consist in support in organizing the rental process and communication.</p>
+                <p>2.2. The Service Provider is not a real estate agency and does not provide brokerage services (including within the meaning of German and Dutch law).</p>
+                <p>2.3. The Service Provider does not sign lease agreements on behalf of the parties and does not make decisions on rental.</p>
+
+                <h2>3. Scope of services</h2>
+                <p>3.1. The scope of services may include in particular:</p>
+                <ul>
+                    <li>preliminary analysis of the client’s situation and requirements,</li>
+                    <li>provision of information and document checklists,</li>
+                    <li>organizational assistance and communication support,</li>
+                    <li>preparation/organization of applications and information,</li>
+                    <li>preliminary selection of candidates and recommendation of applications (for landlords),</li>
+                    <li>informational support on the user’s side (without interference with the agreement).</li>
+                </ul>
+                <p>3.2. The detailed scope of services is agreed individually with the client before cooperation begins.</p>
+
+                <h2>4. Rules of cooperation with persons seeking rental</h2>
+                <p>4.1. The Service Provider may provide information about the rental process, required documents and help in preparing applications.</p>
+                <p>4.2. The Service Provider does not guarantee finding an apartment or concluding a lease agreement.</p>
+
+                <h2>5. Rules of cooperation with landlords (owners)</h2>
+                <p>5.1. The service for landlords consists in selecting applications and recommending candidates in accordance with criteria provided by the landlord.</p>
+                <p>5.2. The decision on the choice of tenant and the terms of the lease agreement belongs exclusively to the landlord and the tenant.</p>
+                <p>5.3. The Service Provider does not negotiate rent or agreement terms and does not broker its conclusion.</p>
+
+                <h2>6. Remuneration and payments</h2>
+                <p>6.1. The service price list may be indicated in the Service or agreed individually.</p>
+                <p>6.2. The remuneration concerns solely performance of the service (e.g. selection, preparation of information, organizational support) and is not a commission on rent or deposit.</p>
+                <p>6.3. The remuneration is fixed and does not depend on whether a lease agreement is signed.</p>
+                <p>6.4. Payment is made in advance, by bank transfer to the Service Provider’s bank account, before performance of the service begins.</p>
+
+                <h2>6a. Client cancellation and refund</h2>
+                <p>6a.1. The client may cancel the service at any time by submitting a statement to the Service Provider’s e-mail address.</p>
+                <p>6a.2. In case of cancellation BEFORE the start of service performance, the Service Provider refunds 100% of the amount paid.</p>
+                <p>6a.3. In case of cancellation AFTER the start of service performance, the Service Provider refunds 50% of the amount paid.</p>
+                <p>6a.4. “Start of service performance” means the moment the Service Provider sends the first information, analysis or checklist to the client.</p>
+
+                <h2>7. Right of withdrawal from the agreement (consumer)</h2>
+                <p>7.1. A consumer has the right to withdraw from the agreement without stating a reason within 14 days from the date of its conclusion.</p>
+                <p>7.2. To withdraw from the agreement, the consumer should send an unambiguous statement to the Service Provider’s e-mail address.</p>
+                <p>7.3. In case of withdrawal from the agreement, the Service Provider refunds all payments received from the consumer without delay, no later than within 14 days from receipt of the statement.</p>
+
+                <h2>8. Exclusions of liability</h2>
+                <p>8.1. The Service Provider is not responsible for decisions of third parties (owners, agencies, managers) nor for the content of listings.</p>
+                <p>8.2. The Service Provider is not responsible for the condition of the property, agreement terms, amount of fees or other arrangements between the parties.</p>
+                <p>8.3. The Service Provider is not liable for the effectiveness of rental.</p>
+
+                <h2>9. Complaints</h2>
+                <p>9.1. Complaints may be submitted by e-mail to: Kontakt@deneeu.pl.</p>
+                <p>9.2. A complaint should include name, surname, description of the problem and the expected method of resolution.</p>
+                <p>9.3. A response to the complaint will be provided within 14 days from the date of its receipt.</p>
+
+                <h2>10. Final provisions</h2>
+                <p>10.1. These Terms are effective from the date of publication in the Service.</p>
+                <p>10.2. The Service Provider may update these Terms – the current version is always published in the Service.</p>
+                <p>10.3. In matters not regulated by these Terms, provisions of German law shall apply.</p>
+                <p>10.4. The court competent for dispute resolution is the court competent for the Service Provider’s registered office.</p>
+            </div>
+
+            <div id="terms-nl" class="terms-content hidden">
+                <h2>Voorwaarden voor dienstverlening – deneeu.pl</h2>
+
+                <h2>1. Algemene bepalingen</h2>
+                <p>1.1. De dienstverlener is Bartosz Szymon Flis, die een onderneming drijft onder de handelsnaam Deneeu, gevestigd in Duitsland: Hulser str 460, 47803 KREFELD (hierna: de “Dienstverlener”).</p>
+                <p>1.2. Deze voorwaarden bepalen de regels voor het verlenen van diensten via de website deneeu.pl (de “Dienst”).</p>
+                <p>1.3. Contact met de Dienstverlener: e-mail: Kontakt@deneeu.pl, telefoon: +49 17670167819, WhatsApp (zelfde nummer als hierboven).</p>
+                <p>1.4. Deze voorwaarden zijn beschikbaar in het Pools, Engels, Duits en Nederlands. Bij interpretatieverschillen is de Poolse versie bindend.</p>
+
+                <h2>2. Aard van de diensten</h2>
+                <p>2.1. De diensten hebben een informatief/adviserend en administratief karakter – zij bestaan uit ondersteuning bij het structureren van het huurproces en de communicatie.</p>
+                <p>2.2. De Dienstverlener is geen makelaarskantoor en verleent geen bemiddelingsdiensten (ook niet in de zin van het Duitse en Nederlandse recht).</p>
+                <p>2.3. De Dienstverlener ondertekent geen huurovereenkomsten namens partijen en neemt geen beslissingen over verhuur.</p>
+
+                <h2>3. Omvang van de diensten</h2>
+                <p>3.1. De omvang van de diensten kan in het bijzonder omvatten:</p>
+                <ul>
+                    <li>een voorlopige analyse van de situatie en vereisten van de klant,</li>
+                    <li>het verstrekken van informatie en documentchecklists,</li>
+                    <li>organisatorische hulp en communicatieondersteuning,</li>
+                    <li>voorbereiding/ordening van aanmeldingen en informatie,</li>
+                    <li>voorlopige selectie van kandidaten en aanbeveling van aanmeldingen (voor verhuurders),</li>
+                    <li>informatieve ondersteuning aan de zijde van de gebruiker (zonder inmenging in de overeenkomst).</li>
+                </ul>
+                <p>3.2. De gedetailleerde omvang van de diensten wordt vóór aanvang van de samenwerking individueel met de klant vastgesteld.</p>
+
+                <h2>4. Samenwerking met personen die huur zoeken</h2>
+                <p>4.1. De Dienstverlener kan informatie verstrekken over het huurproces, vereiste documenten en helpen bij het voorbereiden van aanmeldingen.</p>
+                <p>4.2. De Dienstverlener garandeert niet dat een woning wordt gevonden of dat een huurovereenkomst tot stand komt.</p>
+
+                <h2>5. Samenwerking met verhuurders (eigenaren)</h2>
+                <p>5.1. De dienst voor verhuurders bestaat uit het selecteren van aanmeldingen en het aanbevelen van kandidaten volgens de door de verhuurder verstrekte criteria.</p>
+                <p>5.2. De beslissing over de keuze van de huurder en de voorwaarden van de huurovereenkomst ligt uitsluitend bij de verhuurder en de huurder.</p>
+                <p>5.3. De Dienstverlener onderhandelt niet over de huurprijs of contractvoorwaarden en bemiddelt niet bij het sluiten daarvan.</p>
+
+                <h2>6. Vergoeding en betalingen</h2>
+                <p>6.1. De prijslijst van diensten kan in de Dienst worden vermeld of individueel worden vastgesteld.</p>
+                <p>6.2. De vergoeding betreft uitsluitend de uitvoering van de dienst (bijv. selectie, uitwerking van informatie, organisatorische ondersteuning) en is geen commissie over huur of borgsom.</p>
+                <p>6.3. De vergoeding is vast en hangt niet af van het al dan niet ondertekenen van een huurovereenkomst.</p>
+                <p>6.4. Betaling vindt vooraf plaats, via bankoverschrijving naar de bankrekening van de Dienstverlener, vóór de start van de uitvoering van de dienst.</p>
+
+                <h2>6a. Annulering door de klant en terugbetaling</h2>
+                <p>6a.1. De klant kan de dienst op elk moment annuleren door een verklaring te sturen naar het e-mailadres van de Dienstverlener.</p>
+                <p>6a.2. In geval van annulering VÓÓR de start van de uitvoering van de dienst restitueert de Dienstverlener 100% van het betaalde bedrag.</p>
+                <p>6a.3. In geval van annulering NA de start van de uitvoering van de dienst restitueert de Dienstverlener 50% van het betaalde bedrag.</p>
+                <p>6a.4. Onder “start van de uitvoering van de dienst” wordt verstaan het moment waarop de Dienstverlener de eerste informatie, analyse of checklist naar de klant stuurt.</p>
+
+                <h2>7. Herroepingsrecht (consument)</h2>
+                <p>7.1. De consument heeft het recht om binnen 14 dagen na het sluiten van de overeenkomst zonder opgave van redenen de overeenkomst te herroepen.</p>
+                <p>7.2. Om de overeenkomst te herroepen, dient de consument een ondubbelzinnige verklaring te sturen naar het e-mailadres van de Dienstverlener.</p>
+                <p>7.3. In geval van herroeping van de overeenkomst betaalt de Dienstverlener alle van de consument ontvangen betalingen onverwijld terug, uiterlijk binnen 14 dagen na ontvangst van de verklaring.</p>
+
+                <h2>8. Uitsluitingen van aansprakelijkheid</h2>
+                <p>8.1. De Dienstverlener is niet verantwoordelijk voor beslissingen van derden (eigenaren, agentschappen, beheerders), noch voor de inhoud van advertenties.</p>
+                <p>8.2. De Dienstverlener is niet verantwoordelijk voor de staat van de woning, contractvoorwaarden, hoogte van vergoedingen of andere afspraken tussen partijen.</p>
+                <p>8.3. De Dienstverlener is niet aansprakelijk voor de effectiviteit van de verhuur.</p>
+
+                <h2>9. Klachten</h2>
+                <p>9.1. Klachten kunnen per e-mail worden ingediend op: Kontakt@deneeu.pl.</p>
+                <p>9.2. Een klacht dient voornaam, achternaam, omschrijving van het probleem en de gewenste wijze van oplossing te bevatten.</p>
+                <p>9.3. Een reactie op de klacht wordt gegeven binnen 14 dagen na ontvangst ervan.</p>
+
+                <h2>10. Slotbepalingen</h2>
+                <p>10.1. Deze voorwaarden gelden vanaf de publicatiedatum in de Dienst.</p>
+                <p>10.2. De Dienstverlener kan deze voorwaarden actualiseren – de actuele versie wordt altijd in de Dienst gepubliceerd.</p>
+                <p>10.3. Voor zaken die niet in deze voorwaarden zijn geregeld, zijn de bepalingen van het Duitse recht van toepassing.</p>
+                <p>10.4. De bevoegde rechter voor de beslechting van geschillen is de rechter die bevoegd is voor de zetel van de Dienstverlener.</p>
+            </div>
+
+            <div id="terms-de" class="terms-content hidden">
+                <h2>Nutzungsbedingungen – deneeu.pl</h2>
+
+                <h2>1. Allgemeine Bestimmungen</h2>
+                <p>1.1. Dienstleister ist Bartosz Szymon Flis, der eine gewerbliche Tätigkeit unter der Firma Deneeu ausübt, mit Sitz in Deutschland: Hulser str 460, 47803 KREFELD (nachfolgend „Dienstleister”).</p>
+                <p>1.2. Diese Bedingungen regeln die Grundsätze der Erbringung von Dienstleistungen im Rahmen der Website deneeu.pl („Dienst”).</p>
+                <p>1.3. Kontakt mit dem Dienstleister: E-Mail: Kontakt@deneeu.pl, Telefon: +49 17670167819, WhatsApp (Nummer wie oben).</p>
+                <p>1.4. Diese Bedingungen sind in polnischer, englischer, deutscher und niederländischer Sprache verfügbar. Im Falle von Auslegungszweifeln ist die polnische Fassung verbindlich.</p>
+
+                <h2>2. Art der Dienstleistungen</h2>
+                <p>2.1. Die Dienstleistungen sind informativer/beratender sowie administrativer Natur – sie bestehen in der Unterstützung bei der Ordnung des Mietprozesses und der Kommunikation.</p>
+                <p>2.2. Der Dienstleister ist keine Immobilienagentur und erbringt keine Vermittlungsleistungen (auch nicht im Sinne des deutschen und niederländischen Rechts).</p>
+                <p>2.3. Der Dienstleister unterzeichnet keine Mietverträge im Namen der Parteien und trifft keine Entscheidungen über die Vermietung.</p>
+
+                <h2>3. Umfang der Dienstleistungen</h2>
+                <p>3.1. Der Leistungsumfang kann insbesondere umfassen:</p>
+                <ul>
+                    <li>eine vorläufige Analyse der Situation und Anforderungen des Kunden,</li>
+                    <li>die Übermittlung von Informationen und Dokumenten-Checklisten,</li>
+                    <li>organisatorische Hilfe und kommunikative Unterstützung,</li>
+                    <li>die Vorbereitung/Ordnung von Meldungen und Informationen,</li>
+                    <li>eine vorläufige Auswahl von Kandidaten und Empfehlung von Meldungen (für Vermieter),</li>
+                    <li>informative Unterstützung auf der Seite des Nutzers (ohne Eingriff in den Vertrag).</li>
+                </ul>
+                <p>3.2. Der detaillierte Leistungsumfang wird vor Beginn der Zusammenarbeit individuell mit dem Kunden vereinbart.</p>
+
+                <h2>4. Grundsätze der Zusammenarbeit mit Wohnungssuchenden</h2>
+                <p>4.1. Der Dienstleister kann Informationen über den Mietprozess, erforderliche Dokumente übermitteln sowie bei der Vorbereitung von Meldungen helfen.</p>
+                <p>4.2. Der Dienstleister garantiert weder das Finden einer Wohnung noch den Abschluss eines Mietvertrags.</p>
+
+                <h2>5. Grundsätze der Zusammenarbeit mit Vermietern (Eigentümern)</h2>
+                <p>5.1. Die Dienstleistung für Vermieter besteht in der Auswahl von Meldungen und der Empfehlung von Kandidaten gemäß den vom Vermieter übermittelten Kriterien.</p>
+                <p>5.2. Die Entscheidung über die Auswahl des Mieters sowie die Bedingungen des Mietvertrags liegt ausschließlich beim Vermieter und Mieter.</p>
+                <p>5.3. Der Dienstleister verhandelt weder die Miete noch die Vertragsbedingungen und vermittelt nicht beim Vertragsabschluss.</p>
+
+                <h2>6. Vergütung und Zahlungen</h2>
+                <p>6.1. Die Preisliste der Dienstleistungen kann im Dienst angegeben oder individuell vereinbart werden.</p>
+                <p>6.2. Die Vergütung betrifft ausschließlich die Ausführung der Dienstleistung (z. B. Auswahl, Ausarbeitung von Informationen, organisatorische Unterstützung) und ist keine Provision auf Miete oder Kaution.</p>
+                <p>6.3. Die Vergütung ist fest und hängt nicht davon ab, ob ein Mietvertrag unterzeichnet wird.</p>
+                <p>6.4. Die Zahlung erfolgt im Voraus per Überweisung auf das Bankkonto des Dienstleisters vor Beginn der Leistungserbringung.</p>
+
+                <h2>6a. Rücktritt des Kunden und Rückerstattung</h2>
+                <p>6a.1. Der Kunde kann die Dienstleistung jederzeit kündigen, indem er eine Erklärung an die E-Mail-Adresse des Dienstleisters sendet.</p>
+                <p>6a.2. Im Falle einer Kündigung VOR Beginn der Leistungserbringung erstattet der Dienstleister 100% des gezahlten Betrags zurück.</p>
+                <p>6a.3. Im Falle einer Kündigung NACH Beginn der Leistungserbringung erstattet der Dienstleister 50% des gezahlten Betrags zurück.</p>
+                <p>6a.4. Als „Beginn der Leistungserbringung” gilt der Zeitpunkt, zu dem der Dienstleister dem Kunden die erste Information, Analyse oder Checkliste sendet.</p>
+
+                <h2>7. Widerrufsrecht (Verbraucher)</h2>
+                <p>7.1. Der Verbraucher hat das Recht, binnen 14 Tagen ab Vertragsschluss ohne Angabe von Gründen vom Vertrag zurückzutreten.</p>
+                <p>7.2. Um vom Vertrag zurückzutreten, sollte der Verbraucher eine eindeutige Erklärung an die E-Mail-Adresse des Dienstleisters senden.</p>
+                <p>7.3. Im Falle des Rücktritts vom Vertrag erstattet der Dienstleister alle vom Verbraucher erhaltenen Zahlungen unverzüglich, spätestens innerhalb von 14 Tagen nach Erhalt der Erklärung.</p>
+
+                <h2>8. Haftungsausschlüsse</h2>
+                <p>8.1. Der Dienstleister haftet nicht für Entscheidungen Dritter (Eigentümer, Agenturen, Verwalter) und nicht für den Inhalt von Anzeigen.</p>
+                <p>8.2. Der Dienstleister haftet nicht für den Zustand der Immobilie, Vertragsbedingungen, die Höhe von Gebühren oder andere Vereinbarungen zwischen den Parteien.</p>
+                <p>8.3. Der Dienstleister übernimmt keine Haftung für den Erfolg der Vermietung.</p>
+
+                <h2>9. Beschwerden</h2>
+                <p>9.1. Beschwerden können per E-Mail an folgende Adresse eingereicht werden: Kontakt@deneeu.pl.</p>
+                <p>9.2. Eine Beschwerde sollte Vorname, Nachname, Problembeschreibung sowie die erwartete Art der Lösung enthalten.</p>
+                <p>9.3. Die Antwort auf die Beschwerde erfolgt innerhalb von 14 Tagen ab Eingang.</p>
+
+                <h2>10. Schlussbestimmungen</h2>
+                <p>10.1. Diese Bedingungen gelten ab dem Tag der Veröffentlichung im Dienst.</p>
+                <p>10.2. Der Dienstleister kann diese Bedingungen aktualisieren – die aktuelle Fassung wird stets im Dienst veröffentlicht.</p>
+                <p>10.3. In Angelegenheiten, die durch diese Bedingungen nicht geregelt sind, finden die Vorschriften des deutschen Rechts Anwendung.</p>
+                <p>10.4. Zuständiges Gericht für die Beilegung von Streitigkeiten ist das für den Sitz des Dienstleisters zuständige Gericht.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const termsLangButtons = document.querySelectorAll('.lang-btn');
+        const termsContents = document.querySelectorAll('.terms-content');
+        const supportedLangs = ['pl', 'en', 'nl', 'de'];
+
+        const setTermsLang = (lang) => {
+            if (!supportedLangs.includes(lang)) {
+                return;
+            }
+            localStorage.setItem('lang', lang);
+            document.documentElement.lang = lang;
+            termsContents.forEach((content) => {
+                content.classList.toggle('hidden', content.id !== `terms-${lang}`);
+            });
+            termsLangButtons.forEach((btn) => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+        };
+
+        const storedLang = localStorage.getItem('lang');
+        const browserLang = navigator.language.toLowerCase();
+        const detectedLang = storedLang && supportedLangs.includes(storedLang)
+            ? storedLang
+            : browserLang.startsWith('de')
+                ? 'de'
+                : browserLang.startsWith('nl')
+                    ? 'nl'
+                    : browserLang.startsWith('en')
+                        ? 'en'
+                        : 'pl';
+
+        setTermsLang(detectedLang);
+
+        termsLangButtons.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                setTermsLang(btn.dataset.lang);
+            });
+        });
+    </script>
+</body>
+</html>

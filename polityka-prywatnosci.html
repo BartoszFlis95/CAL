@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności - NL•DE Relocation</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #2563eb;
+            --color-text: #1e293b;
+            --color-text-light: #64748b;
+            --color-bg: #ffffff;
+            --color-bg-light: #f8fafc;
+            --color-border: #e2e8f0;
+            --spacing: 1rem;
+            --max-width: 900px;
+            --border-radius: 0.5rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: var(--color-text);
+            background-color: var(--color-bg-light);
+        }
+        
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem var(--spacing);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            gap: 0.75rem;
+        }
+        
+        .document {
+            background: var(--color-bg);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .lang-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .lang-btn {
+            padding: 0.4rem 0.9rem;
+            border-radius: 0.35rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-text-light);
+            background: var(--color-bg-light);
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover,
+        .lang-btn.active {
+            color: var(--color-primary);
+            background: var(--color-bg);
+            border-color: var(--color-border);
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.15);
+        }
+
+        .hidden {
+            display: none;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+        
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+        }
+        
+        strong {
+            font-weight: 600;
+            color: var(--color-text);
+        }
+        
+        @media (max-width: 768px) {
+            .document {
+                padding: 2rem 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .lang-selector {
+                gap: 0.4rem;
+            }
+
+            .lang-btn {
+                flex: 1 1 72px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Powrót do strony głównej</a>
+        
+        <section class="document policy-section">
+            <h1>Polityka prywatności</h1>
+            <div class="lang-selector" role="tablist" aria-label="Wybór języka">
+                <button class="lang-btn active" type="button" data-lang="pl" role="tab" aria-selected="true">PL</button>
+                <button class="lang-btn" type="button" data-lang="en" role="tab" aria-selected="false">EN</button>
+                <button class="lang-btn" type="button" data-lang="nl" role="tab" aria-selected="false">NL</button>
+                <button class="lang-btn" type="button" data-lang="de" role="tab" aria-selected="false">DE</button>
+            </div>
+
+            <div id="policy-pl">
+                <h2>1. Administrator danych</h2>
+                <p>Administratorem danych osobowych jest:<br><strong>Bartosz Szymon Flis</strong><br>Kontakt: e-mail oraz numer telefonu / WhatsApp podane na stronie internetowej.</p>
+
+                <h2>2. Zakres przetwarzanych danych</h2>
+                <p>Administrator może przetwarzać następujące dane:</p>
+                <ul>
+                    <li>imię i nazwisko lub nazwa profilu,</li>
+                    <li>adres e-mail,</li>
+                    <li>numer telefonu (w tym WhatsApp),</li>
+                    <li>kraj lub region (NL / DE),</li>
+                    <li>treść wiadomości,</li>
+                    <li>dobrowolnie przekazane dokumenty,</li>
+                    <li>adres IP oraz dane techniczne (logi serwera).</li>
+                </ul>
+
+                <h2>3. Cel przetwarzania danych</h2>
+                <p>Dane przetwarzane są w celu:</p>
+                <ul>
+                    <li>kontaktu z użytkownikiem,</li>
+                    <li>udzielenia odpowiedzi na zapytanie,</li>
+                    <li>przekazania informacji o oferowanych usługach,</li>
+                    <li>realizacji usług informacyjno-doradczych i administracyjnych,</li>
+                    <li>zapewnienia bezpieczeństwa strony.</li>
+                </ul>
+
+                <h2>4. Podstawa prawna</h2>
+                <p>Dane przetwarzane są na podstawie:</p>
+                <ul>
+                    <li>art. 6 ust. 1 lit. b RODO – działania przed zawarciem umowy,</li>
+                    <li>art. 6 ust. 1 lit. f RODO – prawnie uzasadniony interes administratora.</li>
+                </ul>
+
+                <h2>5. Okres przechowywania danych</h2>
+                <p>Dane przechowywane są maksymalnie 12 miesięcy lub do momentu żądania ich usunięcia.</p>
+
+                <h2>6. Odbiorcy danych</h2>
+                <p>Dane mogą być przekazywane wyłącznie podmiotom technicznym obsługującym stronę (hosting, e-mail). Dane nie są sprzedawane ani wykorzystywane marketingowo.</p>
+
+                <h2>7. Przekazywanie danych właścicielom nieruchomości</h2>
+                <p>Dane mogą być przekazywane właścicielom nieruchomości wyłącznie po uzyskaniu zgody użytkownika i tylko w zakresie niezbędnym do polecenia kandydata.</p>
+
+                <h2>8. Prawa użytkownika</h2>
+                <p>Użytkownik ma prawo do:</p>
+                <ul>
+                    <li>dostępu do danych,</li>
+                    <li>ich poprawiania,</li>
+                    <li>usunięcia,</li>
+                    <li>ograniczenia przetwarzania,</li>
+                    <li>wniesienia sprzeciwu.</li>
+                </ul>
+
+                <h2>9. Kontakt w sprawach RODO</h2>
+                <p>Kontakt poprzez e-mail podany na stronie internetowej.</p>
+            </div>
+
+            <div id="policy-en" class="hidden">
+                <h2>1. Data Controller</h2>
+                <p>The controller of personal data is:<br><strong>Bartosz Szymon Flis</strong><br>Contact: e-mail and phone number / WhatsApp provided on the website.</p>
+
+                <h2>2. Scope of Processed Data</h2>
+                <p>The controller may process the following data:</p>
+                <ul>
+                    <li>full name or profile name,</li>
+                    <li>e-mail address,</li>
+                    <li>phone number (including WhatsApp),</li>
+                    <li>country or region (NL / DE),</li>
+                    <li>message content,</li>
+                    <li>documents provided voluntarily,</li>
+                    <li>IP address and technical data (server logs).</li>
+                </ul>
+
+                <h2>3. Purpose of Processing</h2>
+                <p>Data is processed for the purpose of:</p>
+                <ul>
+                    <li>contacting the user,</li>
+                    <li>responding to inquiries,</li>
+                    <li>providing information about offered services,</li>
+                    <li>delivering advisory, informational, and administrative services,</li>
+                    <li>ensuring website security.</li>
+                </ul>
+
+                <h2>4. Legal Basis</h2>
+                <p>Data is processed based on:</p>
+                <ul>
+                    <li>Article 6(1)(b) GDPR – steps prior to entering into a contract,</li>
+                    <li>Article 6(1)(f) GDPR – the controller’s legitimate interest.</li>
+                </ul>
+
+                <h2>5. Data Retention</h2>
+                <p>Data is stored for a maximum of 12 months or until a request for deletion is made.</p>
+
+                <h2>6. Data Recipients</h2>
+                <p>Data may be shared only with technical service providers supporting the website (hosting, e-mail). Data is not sold or used for marketing.</p>
+
+                <h2>7. Disclosure to Property Owners</h2>
+                <p>Data may be shared with property owners only with the user’s consent and solely to the extent necessary to recommend the candidate.</p>
+
+                <h2>8. User Rights</h2>
+                <p>The user has the right to:</p>
+                <ul>
+                    <li>access their data,</li>
+                    <li>correct it,</li>
+                    <li>delete it,</li>
+                    <li>restrict processing,</li>
+                    <li>object to processing.</li>
+                </ul>
+
+                <h2>9. GDPR Contact</h2>
+                <p>Contact via the e-mail address provided on the website.</p>
+            </div>
+
+            <div id="policy-nl" class="hidden">
+                <h2>1. Verwerkingsverantwoordelijke</h2>
+                <p>De verwerkingsverantwoordelijke voor persoonsgegevens is:<br><strong>Bartosz Szymon Flis</strong><br>Contact: e-mail en telefoonnummer / WhatsApp vermeld op de website.</p>
+
+                <h2>2. Omvang van de verwerkte gegevens</h2>
+                <p>De verwerkingsverantwoordelijke kan de volgende gegevens verwerken:</p>
+                <ul>
+                    <li>voor- en achternaam of profielnaam,</li>
+                    <li>e-mailadres,</li>
+                    <li>telefoonnummer (inclusief WhatsApp),</li>
+                    <li>land of regio (NL / DE),</li>
+                    <li>inhoud van het bericht,</li>
+                    <li>vrijwillig verstrekte documenten,</li>
+                    <li>IP-adres en technische gegevens (serverlogs).</li>
+                </ul>
+
+                <h2>3. Doel van de verwerking</h2>
+                <p>Gegevens worden verwerkt met als doel:</p>
+                <ul>
+                    <li>contact met de gebruiker,</li>
+                    <li>beantwoorden van vragen,</li>
+                    <li>informeren over aangeboden diensten,</li>
+                    <li>uitvoeren van informatieve, adviserende en administratieve diensten,</li>
+                    <li>beveiliging van de website.</li>
+                </ul>
+
+                <h2>4. Rechtsgrond</h2>
+                <p>Gegevens worden verwerkt op basis van:</p>
+                <ul>
+                    <li>artikel 6 lid 1 sub b AVG – handelingen voorafgaand aan een overeenkomst,</li>
+                    <li>artikel 6 lid 1 sub f AVG – gerechtvaardigd belang van de verwerkingsverantwoordelijke.</li>
+                </ul>
+
+                <h2>5. Bewaartermijn</h2>
+                <p>Gegevens worden maximaal 12 maanden bewaard of tot het moment dat om verwijdering wordt gevraagd.</p>
+
+                <h2>6. Ontvangers van gegevens</h2>
+                <p>Gegevens kunnen uitsluitend worden gedeeld met technische dienstverleners die de website ondersteunen (hosting, e-mail). Gegevens worden niet verkocht of gebruikt voor marketing.</p>
+
+                <h2>7. Doorgifte aan vastgoedeigenaren</h2>
+                <p>Gegevens kunnen uitsluitend met toestemming van de gebruiker worden gedeeld met vastgoedeigenaren en alleen voor zover nodig om de kandidaat voor te stellen.</p>
+
+                <h2>8. Rechten van de gebruiker</h2>
+                <p>De gebruiker heeft het recht om:</p>
+                <ul>
+                    <li>inzage in gegevens te krijgen,</li>
+                    <li>gegevens te laten corrigeren,</li>
+                    <li>gegevens te laten verwijderen,</li>
+                    <li>de verwerking te beperken,</li>
+                    <li>bezwaar te maken.</li>
+                </ul>
+
+                <h2>9. Contact over AVG</h2>
+                <p>Contact via het e-mailadres dat op de website staat vermeld.</p>
+            </div>
+
+            <div id="policy-de" class="hidden">
+                <h2>1. Verantwortlicher</h2>
+                <p>Verantwortlich für die Verarbeitung personenbezogener Daten ist:<br><strong>Bartosz Szymon Flis</strong><br>Kontakt: E-Mail und Telefonnummer / WhatsApp wie auf der Website angegeben.</p>
+
+                <h2>2. Umfang der verarbeiteten Daten</h2>
+                <p>Der Verantwortliche kann folgende Daten verarbeiten:</p>
+                <ul>
+                    <li>Vor- und Nachname oder Profilname,</li>
+                    <li>E-Mail-Adresse,</li>
+                    <li>Telefonnummer (einschließlich WhatsApp),</li>
+                    <li>Land oder Region (NL / DE),</li>
+                    <li>Nachrichteninhalt,</li>
+                    <li>freiwillig bereitgestellte Dokumente,</li>
+                    <li>IP-Adresse und technische Daten (Server-Logs).</li>
+                </ul>
+
+                <h2>3. Zweck der Verarbeitung</h2>
+                <p>Daten werden verarbeitet zu folgenden Zwecken:</p>
+                <ul>
+                    <li>Kontaktaufnahme mit dem Nutzer,</li>
+                    <li>Beantwortung von Anfragen,</li>
+                    <li>Bereitstellung von Informationen zu angebotenen Dienstleistungen,</li>
+                    <li>Erbringung von Informations-, Beratungs- und Verwaltungsleistungen,</li>
+                    <li>Sicherheit der Website.</li>
+                </ul>
+
+                <h2>4. Rechtsgrundlage</h2>
+                <p>Die Verarbeitung erfolgt auf Grundlage von:</p>
+                <ul>
+                    <li>Art. 6 Abs. 1 lit. b DSGVO – Maßnahmen vor Abschluss eines Vertrags,</li>
+                    <li>Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse des Verantwortlichen.</li>
+                </ul>
+
+                <h2>5. Speicherdauer</h2>
+                <p>Daten werden maximal 12 Monate gespeichert oder bis zur Anforderung ihrer Löschung.</p>
+
+                <h2>6. Empfänger der Daten</h2>
+                <p>Daten dürfen ausschließlich an technische Dienstleister weitergegeben werden, die die Website betreuen (Hosting, E-Mail). Daten werden weder verkauft noch zu Marketingzwecken verwendet.</p>
+
+                <h2>7. Weitergabe an Immobilieneigentümer</h2>
+                <p>Daten dürfen nur mit Zustimmung des Nutzers und ausschließlich im erforderlichen Umfang an Immobilieneigentümer weitergegeben werden, um den Kandidaten vorzuschlagen.</p>
+
+                <h2>8. Rechte des Nutzers</h2>
+                <p>Der Nutzer hat das Recht auf:</p>
+                <ul>
+                    <li>Zugriff auf die Daten,</li>
+                    <li>Berichtigung,</li>
+                    <li>Löschung,</li>
+                    <li>Einschränkung der Verarbeitung,</li>
+                    <li>Widerspruch.</li>
+                </ul>
+
+                <h2>9. Kontakt in DSGVO-Angelegenheiten</h2>
+                <p>Kontakt per E-Mail, die auf der Website angegeben ist.</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const policyBlocks = {
+            pl: document.getElementById('policy-pl'),
+            en: document.getElementById('policy-en'),
+            nl: document.getElementById('policy-nl'),
+            de: document.getElementById('policy-de')
+        };
+
+        const setActiveLanguage = (lang) => {
+            langButtons.forEach(button => {
+                const isActive = button.dataset.lang === lang;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-selected', isActive.toString());
+            });
+
+            Object.entries(policyBlocks).forEach(([key, block]) => {
+                if (!block) {
+                    return;
+                }
+                block.classList.toggle('hidden', key !== lang);
+            });
+        };
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                setActiveLanguage(button.dataset.lang);
+            });
+        });
+
+        const preferredLang = (navigator.language || '').toLowerCase();
+        const normalizedLang = preferredLang.split('-')[0];
+        if (policyBlocks[normalizedLang]) {
+            setActiveLanguage(normalizedLang);
+        }
+    </script>
+</body>
+</html>
